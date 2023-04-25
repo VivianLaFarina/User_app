@@ -15,7 +15,7 @@ const Modal = ({isShowForm, setIsShowForm, handleSubmit, register, submit}) => {
                 <div className="grid gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="last_name">Last Name</label>
                     <input className="border-[1px] rounded-lg bg-gray-100 p-1" id="last_name" type="text"
-                    {...register("last-name")} />
+                    {...register("last_name")} />
                 </div>
                 <div className="grid gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="Email">Email</label>
