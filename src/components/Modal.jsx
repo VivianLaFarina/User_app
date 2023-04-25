@@ -39,6 +39,7 @@ const Modal = ({
                 <div className="grid gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="last_name">Last Name
                         <span span className="text-red-500" >*</span >
+                    
                     </label>
                     <input
                         className="border-[1px] rounded-lg bg-gray-100 p-1"
