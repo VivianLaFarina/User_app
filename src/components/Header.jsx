@@ -4,9 +4,9 @@ const Header = ({setIsShowForm}) => {
 
   }
   return (
-    <header className=""
-    ><h1>Users</h1>
-    <button onClick={handleClickShowModal} className="bg-purple-p text-white p-2 hover:bg-purple-p/90 transition-colors text-sm border-[1px] rounded-lg "> <i className='bx bxs-user-plus text-2xl'></i> Create new user</button>
+    <header className=" flex justify-between px-7 py-12  text-4xl font-bold "
+    ><h1 className="flex justify-center">Users</h1>
+    <button onClick={handleClickShowModal} className="bg-purple-p text-white p-2 hover:bg-purple-p/80 transition-colors text-sm border-[1px] rounded-lg flex justify-between items-center "> <i className='bx bxs-user-plus text-purple-950 text-xl rounded-2xl flex'></i> Add new user</button>
     </header>
   )
 }
