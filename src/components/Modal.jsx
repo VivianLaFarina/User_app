@@ -28,7 +28,7 @@ const Modal = ({
                 <h3 className=" text-2xl font-bold">{isUserIdToEdit ? "Edit user" : "New user"}</h3>
                 <div className="grid gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="first_name">First Name
-                        <span span className="text-red-500" >*</span >
+                        <span className="text-red-500" >*</span >
                     </label>
                     <input
                         className="border-[1px] rounded-lg bg-gray-100 p-1 "
@@ -38,7 +38,7 @@ const Modal = ({
                 </div>
                 <div className="grid gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="last_name">Last Name
-                        <span span className="text-red-500" >*</span >
+                        <span className="text-red-500" >*</span >
                     
                     </label>
                     <input
@@ -49,7 +49,7 @@ const Modal = ({
                 </div>
                 <div className="grid gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="Email">Email
-                        <span span className="text-red-500" >*</span >
+                        <span className="text-red-500" >*</span >
                     </label>
                     <input
                         className="border-[1px] rounded-lg bg-gray-100 p-1"
@@ -60,8 +60,8 @@ const Modal = ({
                 <div className="grid gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="password">
                         Password
-                        <span span className="text-red-500" >*</span >
-                    </label>
+                        <span className="text-red-500" >*</span >
+                    </label >
                     <input
                         className="border-[1px] rounded-lg bg-gray-100 p-1"
                         id="password"
@@ -70,7 +70,7 @@ const Modal = ({
                 </div>
 
                 <div className="grid gap-1 ">
-                    <label className="text-xs font-semibold" htmlFor="birthday">
+                    <label className="text-xs font-semibold cursor-pointer" htmlFor="birthday">
                         Birthday
                     </label>
                     <input
@@ -98,8 +98,8 @@ const Modal = ({
                             {errors.image_url && errors.image_url.message}
                         </span>
                 </div>
-                <i onClick={handleClickShowModal} className='bx bx-x-circle absolute text-gray-500 top-3 right-4 text-3xl hover:text-red-500 cursor-pointer '></i>
-                <button className="bg-purple-p text-white p-2 hover:bg-purple-p/90 transition-colors text-sm border-[1px] rounded-lg"> {isUserIdToEdit ? " Save Changes" : "Add New User "}</button>
+                <i onClick={handleClickShowModal} className='bx bx-x-circle absolute text-gray-500 top-3 right-4 text-3xl hover:text-red-500 hover:animate-pulse cursor-pointer '></i>
+                <button className="bg-purple-p text-white p-2 hover:bg-purple-p/90 transition-colors hover:animate-pulse text-sm border-[1px] rounded-lg"> {isUserIdToEdit ? " Save Changes" : "Add New User "}</button>
             </form>
         </section>
     );
