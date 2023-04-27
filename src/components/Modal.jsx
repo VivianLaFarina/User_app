@@ -47,12 +47,12 @@ const Modal = ({
                         type="text"
                         {...register("last_name")} />
                 </div>
-                <div className="grid gap-1 ">
+                <div className="grid  gap-1 ">
                     <label className="text-xs font-semibold" htmlFor="Email">Email
                         <span className="text-red-500" >*</span >
                     </label>
                     <input
-                        className="border-[1px] rounded-lg bg-gray-100 p-1"
+                        className="border-[1px] rounded-lg bg-gray-100 p-1 grid"
                         id="Email"
                         type="email"
                         {...register("email")} />
