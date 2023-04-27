@@ -2,7 +2,7 @@ const UserCard = ({ user, deleteUser, handleClickEdit }) => {
     return (
         <article className="rounded-3xl bottom-2 bg-slate-100 ">
             <div className="hover:animate-bounce">
-                <img className="w-[100] aspect-[2/3] object-cover mx-auto rounded-full  " src={user.image_url ? user.image_url : "/images/noImage.jpg"} alt=" User image Not Found" />
+                <img className="w-[100] aspect-[2/3] object-cover mx-auto rounded-full rounded-t-lg p-1 " src={user.image_url ? user.image_url : "/images/noImage.jpg"} alt=" User image Not Found" />
             </div>
             <h3 className="px-4 py-5 text-3xl font-semibold  border-t-2">{user.frist_name} {user.last_name}</h3>
             <ul>
